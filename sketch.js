@@ -54,9 +54,9 @@ function draw() {
   packageSprite.y= packageBody.position.y 
   drawSprites();
   
-  if (packageSprite.isTouching(ground)) { 
-	Matter.Body.setStatic(packageBody,true);
-}
+  if (packageSprite.x = 625) {
+	   Matter.Body.setStatic(packageBody,true);
+	 }
 }
 
 function keyPressed() {
