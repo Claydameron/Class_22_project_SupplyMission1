@@ -31,7 +31,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.6, isStatic:true});
+	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.5, isStatic:true,friction:50});
 	World.add(world, packageBody);
 	
 
@@ -53,10 +53,7 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
   drawSprites();
-  
-  if (packageSprite.x === 625) {
-	   Matter.Body.setStatic(packageBody,true);
-	 }
+
 }
 
 function keyPressed() {
