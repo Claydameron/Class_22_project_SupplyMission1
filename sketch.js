@@ -54,7 +54,7 @@ function draw() {
   packageSprite.y= packageBody.position.y 
   drawSprites();
   
-  if (packageSprite.x = 625) {
+  if (packageSprite.x === 625) {
 	   Matter.Body.setStatic(packageBody,true);
 	 }
 }
